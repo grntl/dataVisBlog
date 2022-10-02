@@ -1,6 +1,6 @@
 # Data Visualization Bits
 
-[Short Form Posts]()
+[Short Form Posts](https://github.com/grntl/dataVisBlog/blob/b1541ee35cb8d109bd1438eee7f3d958f1790daa/shortForm.md) [Final Assignment]()
 ##
 
 Welcome!
