@@ -13,8 +13,14 @@ I found this from a [New York Times article about abortion costs](https://archiv
 
 A bit of code that might produce the same thing with two graphs would be:
 ```
-abortionClinic1 %>%
-  ggplot(aes(x = year, y = avg_spendingPerPatient)) + 
-  geom_line() +
+abortionPrices %>%
+  ggplot(aes(x = year) + 
+  geom_line(aes(y = abortionClinic1)) +
+  ylim(0, 1000)
+  
+abortionClinic2 %>%
+  ggplot(aes(x = year) +
+  geom_line(aes(y = abortionClinic2)) + 
   ylim(0, 1000)
 ```
+This way, there are two graphs. I got the idea for this code from [stackOverflow](https://stackoverflow.com/questions/30375600/how-to-plot-multiple-lines-for-each-column-of-a-data-matrix-against-one-column), because I realized that the table for this data would have to be structured kind of oddly. 
