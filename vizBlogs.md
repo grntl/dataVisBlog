@@ -10,3 +10,11 @@ I dislike this visualization because for a rather simple reason. I understand th
 ![Web capture_10-10-2022_222639_archive ph](https://user-images.githubusercontent.com/114178136/194990371-747ee777-205c-4425-a8f1-ac75da6bba2a.jpeg)
 
 I found this from a [New York Times article about abortion costs](https://archive.ph/NKrTS). I liked this visualization because it kept the y axis consistent throughout every single graph despite the fact that there were many of them and that one even went off the chart. In my opinion, that's preferable to having a different y-axis for every single graph because then it would be hard to evaluate or compare across graphs. 
+
+A bit of code that might produce the same thing with two graphs would be:
+```
+abortionClinic1 %>%
+  ggplot(aes(x = year, y = avg_spendingPerPatient)) + 
+  geom_line() +
+  ylim(0, 1000)
+```
