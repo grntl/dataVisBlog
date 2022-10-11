@@ -67,7 +67,7 @@ I combined the countries vector and the averages together into one new dataframe
 avgCostCountry <- data.frame(countries, averages)
 avgCostCountry
 ```
-I then made a bar graph with the data.
+Then I made a bar graph with the data.
 ```{r}
 avgCostCountry %>%
   ggplot(aes(x = as.factor(countries), y = averages)) +
