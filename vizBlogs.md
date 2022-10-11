@@ -76,4 +76,4 @@ avgCostCountry %>%
   labs(x = "Country", y = "Average Real Cost in Millions of USD")
 ``` 
 Unfortunately, I cannot understand for the life of me how to shift the axis so that the country labels are actually aligned with their bars. But if you inspect closely, you can see how the column for US is just far beyond any other country. 
-![avgCostCountry](https://user-images.githubusercontent.com/114178136/195019862-0d157d8b-ff7c-4b39-95db-d740c3913573.jpg)
+![avgCostCountry](https://user-images.githubusercontent.com/114178136/195026266-9b35d58a-5106-440c-b59c-f9369efe5200.jpg)
