@@ -25,6 +25,55 @@ clinic2Graph %>%
 ```
 This way, there are two graphs. I got the idea for this code from [stackOverflow](https://stackoverflow.com/questions/30375600/how-to-plot-multiple-lines-for-each-column-of-a-data-matrix-against-one-column), because I realized that the table for this data would have to be structured kind of oddly. The left hand column would be a sort of index by year, and the columns would be each abortion clinic, with the values being the prices. I'd obviously have to be selective about the years by picking specifically the 2021-2022 row, but I'm not sure how to do that yet.
 ## My own data visualization
-![avgCostCountry](https://user-images.githubusercontent.com/114178136/195019862-0d157d8b-ff7c-4b39-95db-d740c3913573.jpg)
-
 I found a dataset that was put on tidytuesdays on GitHub in 2021 about [transit costs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-05/readme.md). I'm very into transit, and it's a huge problem in America that transit costs an insane amount to build—it means we end up with some of the worst public transit in the world, or none at all.
+
+First, I did ```head(transit_cost)``` in order to see what the table looked like. I could see that it had various cities as rows, with their country as a variable, along with the cost per kilometer.
+
+Then I cleaned the data by removing NAs. 
+
+```
+transitCleaned <- na.omit(transit_cost)
+```
+In order to do the country-by-country analysis I wanted to do, I needed to find out what countries there were in the database. I used the code below to find all the unique values of in the 'country' column of the datatable and also put them into a vector that I could utilize later.
+```
+countries <- c(unique(transitCleaned$country))
+countries
+```
+Then I made a function where if I gave it a country, it would go and find the average value of the cost per kilometer from that country by finding all the entries in the database from that country and averaging their values in the cost per kilometer column.
+```
+countryAvg <- function(x) {
+  tally <- 0
+  totalCost <- 0
+  for (i in 1:nrow(transitCleaned)) {
+    if (transitCleaned$country[i] == x){
+      totalCost <- totalCost + as.numeric(transitCleaned$cost_km_millions[i])
+      tally <- tally + 1
+    }
+  }
+  return(totalCost / tally)
+}
+```
+
+I made an empty vector that I would fill with the averages for every country. I used a for loop to iterate through the vector of countries I had made earlier and call on the function for every one of the countries. Each iteration appends the average cost per kilometer of that country onto the empty vector so that by the time the for loop as gone through every country, the vector should now be filled with the average cost per kilometer for every country.
+```
+averages <- c()
+for (c in countries) {
+  averages <- append(averages, countryAvg(c))
+}
+averages
+```
+I combined the countries vector and the averages together into one new dataframe that I would work with.
+```
+avgCostCountry <- data.frame(countries, averages)
+avgCostCountry
+```
+I then made a bar graph with the data.
+```{r}
+avgCostCountry %>%
+  ggplot(aes(x = as.factor(countries), y = averages)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  geom_col(stat = 'identity') +
+  labs(x = "Country", y = "Average Real Cost in Millions of USD")
+``` 
+Unfortunately, I cannot understand for the life of me how to shift the axis so that the country labels are actually aligned with their bars. But if you inspect closely, you can see how the column for US is just far beyond any other country. 
+![avgCostCountry](https://user-images.githubusercontent.com/114178136/195019862-0d157d8b-ff7c-4b39-95db-d740c3913573.jpg)
