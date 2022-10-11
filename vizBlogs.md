@@ -34,7 +34,7 @@ Then I cleaned the data by removing NAs.
 ```
 transitCleaned <- na.omit(transit_cost)
 ```
-In order to do the country-by-country analysis I wanted to do, I needed to find out what countries there were in the database. I used the code below to find all the unique values of in the 'country' column of the datatable and also put them into a vector that I could utilize later.
+In order to do the country-by-country analysis I wanted to do, I needed to find out what countries there were in the database. I used the code below to find all the unique values in the 'country' column of the datatable and also put them into a vector that I could utilize later.
 ```
 countries <- c(unique(transitCleaned$country))
 countries
