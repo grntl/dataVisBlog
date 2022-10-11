@@ -12,6 +12,7 @@ I dislike this visualization because for a rather simple reason. I understand th
 I found this from a [New York Times article about abortion costs](https://archive.ph/NKrTS). I liked this visualization because it kept the y axis consistent throughout every single graph despite the fact that there were many of them and that one even went off the chart. In my opinion, that's preferable to having a different y-axis for every single graph because then it would be hard to evaluate or compare across graphs. 
 
 A bit of code that might produce the same thing with two graphs would be:
+EDIT: I now know that this could be done quite nicely with a facet wrap.
 ```
 clinic1Graph %>%
   ggplot(aes(x = year) + 
