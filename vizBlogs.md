@@ -24,3 +24,7 @@ clinic2Graph %>%
   ylim(0, 1000)
 ```
 This way, there are two graphs. I got the idea for this code from [stackOverflow](https://stackoverflow.com/questions/30375600/how-to-plot-multiple-lines-for-each-column-of-a-data-matrix-against-one-column), because I realized that the table for this data would have to be structured kind of oddly. The left hand column would be a sort of index by year, and the columns would be each abortion clinic, with the values being the prices. I'd obviously have to be selective about the years by picking specifically the 2021-2022 row, but I'm not sure how to do that yet.
+## My own data visualization
+![avgCostCountry](https://user-images.githubusercontent.com/114178136/195019862-0d157d8b-ff7c-4b39-95db-d740c3913573.jpg)
+
+I found a dataset that was put on tidytuesdays on GitHub in 2021 about [transit costs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-05/readme.md). I'm very into transit, and it's a huge problem in America that transit costs an insane amount to build—it means we end up with some of the worst public transit in the world, or none at all.
