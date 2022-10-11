@@ -13,12 +13,12 @@ I found this from a [New York Times article about abortion costs](https://archiv
 
 A bit of code that might produce the same thing with two graphs would be:
 ```
-abortionPrices %>%
+clinic1Graph %>%
   ggplot(aes(x = year) + 
   geom_line(aes(y = abortionClinic1)) +
   ylim(0, 1000)
   
-abortionClinic2 %>%
+clinic2Graph %>%
   ggplot(aes(x = year) +
   geom_line(aes(y = abortionClinic2)) + 
   ylim(0, 1000)
