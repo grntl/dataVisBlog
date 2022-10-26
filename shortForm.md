@@ -17,8 +17,7 @@ This aggregates data from every single station for every single day of that year
 
 We can look at this in more detail by looking at monthly ridership over the same time period. 
 
-![Screenshot_20221025_055208](https://user-images.githubusercontent.com/114178136/197940488-f5402997-b06c-4b6f-94a1-a542410d72c1.png)
-
+![Screenshot_20221026_121730](https://user-images.githubusercontent.com/114178136/197941144-c198938f-0d8a-4186-9e1a-3aa6da187cd4.png)
 
 Here, you can see how ridership fluctuates each year, such as how ridership tends to decrease in the winter. Because the first graph is cumulative, it does not show just how fast the monthly ridership totals have begun to rebound, since a cumulative tally at the end of a year takes time to reflect what has happened over the course of the year. You can also see the precipitous fall after COVID-19 began. More importantly, this graph allows us to see just how fast the recovery is happening. The seasonal dip from the winter of 2021 into 2022 finished much higher than recent lows, giving a decent ridership base to climb from through the rest of 2022. 
 
