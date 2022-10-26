@@ -11,13 +11,13 @@ Recently, ridership come under scrutiny, not only because the adoption of public
 To investigate this issue, I used the official CTA dataset “CTA – Ridership – ‘L’ Station Entries – Daily Totals,” which can be found here: https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f. The dataset consists of five columns: the station ID, the station name, date, the type of day (weekday, Saturday, Sunday/holiday), and also the number of rides. This data is fairly reputable because it is collected by the official agency itself. The data goes from the beginning of 2001 up through July, 2022. 
 I want to use this data to visualize and understand how ridership has historically been on the CTA, and how it has looked in recent years. To begin, I made a bar plot of the ridership total for each year. 
 
-![Screenshot_20221025_045607](https://user-images.githubusercontent.com/114178136/197940422-06c31da6-3350-478c-a079-215a0ace58a4.png)
+![This is a bar plot graph showing ridership by year](https://user-images.githubusercontent.com/114178136/197940422-06c31da6-3350-478c-a079-215a0ace58a4.png)
 
 This aggregates data from every single station for every single day of that year and adds them together. After making this graph, it is very clear just how much COVID-19 affected ridership. However, it has also been increasing since 2020, as the data for 2022 only goes through July, yet the ridership is about three-quarters of the way to 2021’s ridership total. 
 
 We can look at this in more detail by looking at monthly ridership over the same time period. 
 
-![Screenshot_20221026_121730](https://user-images.githubusercontent.com/114178136/197941144-c198938f-0d8a-4186-9e1a-3aa6da187cd4.png)
+![This is a line graph showing ridership by month, from 2001 to 2022](https://user-images.githubusercontent.com/114178136/197941144-c198938f-0d8a-4186-9e1a-3aa6da187cd4.png)
 
 Here, you can see how ridership fluctuates each year, such as how ridership tends to decrease in the winter. Because the first graph is cumulative, it does not show just how fast the monthly ridership totals have begun to rebound, since a cumulative tally at the end of a year takes time to reflect what has happened over the course of the year. You can also see the precipitous fall after COVID-19 began. More importantly, this graph allows us to see just how fast the recovery is happening. The seasonal dip from the winter of 2021 into 2022 finished much higher than recent lows, giving a decent ridership base to climb from through the rest of 2022. 
 
