@@ -1,6 +1,7 @@
 # Short Form Posts
 [Home](https://github.com/grntl/dataVisBlog/blob/a6217a8dae80b358d75b71554485020a7e35e4e7/README.md) | [Visualization Blogs](https://github.com/grntl/dataVisBlog/blob/05aa0aa680d6fafe407189b80aa74af30f474d7d/vizBlogs.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
+## Visualizing CTA Ridership (short form blog \#1)
 
 Public transit is a cornerstone of urban communities. It allows residents of a city to commute to work without having to be in a car on the street. This is important for many reasons. First, the environmental benefits of having less car trips is huge. Not only is it better for the climate, but it makes for a better city in terms of noise, pollution, and safety. Second, public transit allows many people to save money on transit because they do not have to buy a car. 
 
