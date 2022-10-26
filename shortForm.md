@@ -33,4 +33,17 @@ I was unable to add a legend due to the way I had to program it (likely suboptim
 
 This graph also shows ridership over the course of each year, but rather than showing cumulative counts, it shows the riders each month. The outlook from this graph might make a hope for a speedy public transit ridership recovery doubtful. The red line showing ridership each month for 2022 seems to be flattening out compared to the same line in 2021. When viewed against the pre-COVID lines, this is somewhat typical when only observing the trajectory of the graph, while ignoring the magnitude, as the pre-Covid years seemed to have pretty flat lines as well. However, there is clearly no guaranteed inexorable climb in the recovery, and officials will have to work to encourage the public to utilize public transit again, rather than relying on some sort of natural recovery.
 
-The data visualization did not really find anything particularly new. The conclusions made here by looking at the data visualizations are corroborated by news articles that are already on the Internet. Nevertheless, it helps us visualize in a few ways a lot of the trends that news articles have only described in words. For example, the first article that talks about recent ridership after a simple "CTA ridership” Google search is one by [Streetsblog Chicago](https://chi.streetsblog.org/2022/09/26/some-good-news-about-cta-for-a-change-ridership-has-reached-a-new-pandemic-era-record/), which has data visuals other than a picture of a table. I did not find anything better from all the links of the first page of Google results for that search. So while these graphs do not discover anything new, the media out there for the public to consume very much utilize these sort of graphics, or similar and better ones, so that readers do not have to try and picture what a certain percentage increase or decrease might look like. 
+The data visualization did not really find anything particularly new. The conclusions made here by looking at the data visualizations are corroborated by news articles that are already on the Internet. Nevertheless, it helps us visualize in a few ways a lot of the trends that news articles have only described in words. For example, the first article that talks about recent ridership after a simple "CTA ridership” Google search is one by [Streetsblog Chicago](https://chi.streetsblog.org/2022/09/26/some-good-news-about-cta-for-a-change-ridership-has-reached-a-new-pandemic-era-record/), which has data visuals other than a picture of a table. I did not find anything better from all the links of the first page of Google results for that search. So while these graphs do not discover anything new, the media out there for the public to consume very much utilize these sort of graphics, or similar and better ones, so that readers do not have to try and picture what a certain percentage increase or decrease might look like.
+
+Citations:
+[Chicago Data Portal for the dataset CTA - Ridership - 'L' Station Entries - Daily Totals: https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f)
+
+Packages used the data visualization:
+[tidyverse](https://www.tidyverse.org/)
+[ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+[fauxnaif](https://cran.r-project.org/web/packages/fauxnaif/index.html)
+[patchwork](https://cran.r-project.org/web/packages/fauxnaif/index.html)
+[dplyr](https://dplyr.tidyverse.org/)
+[lubridate](https://lubridate.tidyverse.org/)
+[scales](https://scales.r-lib.org/)
+[viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
