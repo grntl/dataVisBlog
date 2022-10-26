@@ -39,7 +39,7 @@ Citations:
 
 [Chicago Data Portal for the dataset CTA - Ridership - 'L' Station Entries - Daily Totals: https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f)
 
-Packages used the data visualization:
+Packages used in the data visualization:
 - [tidyverse](https://www.tidyverse.org/)
 - [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
 - [fauxnaif](https://cran.r-project.org/web/packages/fauxnaif/index.html)
