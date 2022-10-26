@@ -25,11 +25,11 @@ One thing to note from both the first and second graph is that they show a rider
 
 Next, I’m curious about how fast the ridership total tends to increase over the course of the year. That means that for each year, I want a line which at any given month of the x axis shows the running total of ridership up to that point since the start of the year:
 
-PICTURE
+![Screenshot_20221025_050406](https://user-images.githubusercontent.com/114178136/197940555-cb73c1bf-10ab-4e57-8395-1b6fa40c10af.png)
 
 I was unable to add a legend due to the way I had to program it (likely suboptimal), but to explain the coloring, all the black lines are from 2001-2019. The yellow line is 2020. It was going on the same general trajectory as all the previous years, but plateaus right when COVID-19 hit. 2021 is in blue. The trajectory of the 2021 total ridership over the year steadily increases, but its rate of increase is much lower than those of previous years (excluding 2020, of course). Finally, the red line is 2022. Although the red line started the year out with similarly low ridership as the winter of 2021, it is climbing a little faster than in 2021, meaning that more people are coming back to use public transit again. Perhaps something we might see in the near future is the line for each particular year steadily climbing up to where the black lines from pre-COVID ridership years are clustered.
 
-PICTURE
+![Screenshot_20221025_061602](https://user-images.githubusercontent.com/114178136/197940574-ece0f198-18a6-461e-bcb8-df7f9427e7c4.png)
 
 This graph also shows ridership over the course of each year, but rather than showing cumulative counts, it shows the riders each month. The outlook from this graph might make a hope for a speedy public transit ridership recovery doubtful. The red line showing ridership each month for 2022 seems to be flattening out compared to the same line in 2021. When viewed against the pre-COVID lines, this is somewhat typical when only observing the trajectory of the graph, while ignoring the magnitude, as the pre-Covid years seemed to have pretty flat lines as well. However, there is clearly no guaranteed inexorable climb in the recovery, and officials will have to work to encourage the public to utilize public transit again, rather than relying on some sort of natural recovery.
 
