@@ -35,6 +35,7 @@ ctaRidership %>%
 ```
 My first graph looked like this:
 ![This is a graph showing average rides per month from 2001-2019](https://user-images.githubusercontent.com/114178136/199940073-2506c676-3b4b-41bb-af32-1db519ba88aa.png)
+From this graph, we can tell that ridership peaks in October and is the lowest during the winter.
 My code to produce this graph (with annotations):
 ```
 # grouping the data by months. 
@@ -71,6 +72,7 @@ ridershipByMonth %>%
 ```
 My second graph looked like this:
 ![This is a graph showing average rides per weekday from 2001-2019](https://user-images.githubusercontent.com/114178136/199940143-b97d1971-6dc5-4f49-a09d-8cf74dd67b95.png)
+From this graph we can tell that the weekend usually has the least ridership, and that Monday has slightly slightly less ridership than the other four weekdays. 
 The code to produce this graph (with annotations):
 ```
 # Find the total number of weeks that have passed. We need to use this for the standard error calculation.
