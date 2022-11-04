@@ -103,7 +103,7 @@ ridershipByDay %>%
   ggtitle('Average Rides per Weekday from 2001-2019') -> ridershipWeekday
 ```
 ### A visualization I found recently that I disliked
-I found this in a tweet from Fortune magazine. 
+I found this in a tweet from Fortune magazine.
 ![Ff2PBHCWYAEVEy5](https://user-images.githubusercontent.com/114178136/199940413-a29a95df-661a-4028-9ea5-e720517f8787.png)
 The part that really doomed this visualization is the legend. First of all, what is a Zillow Home Value Index? I have no clue what any numbers on the color scale mean. Additionally, the x axis of the color scale itself is not even. The left end of the color scale is -10, but the middle is 0, and then the right is 50. I would just put some plain old percentage values on the scale, instead of whatever the Zillow  Home Value Index is.
 
