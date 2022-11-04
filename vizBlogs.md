@@ -2,6 +2,111 @@
 [Home](https://github.com/grntl/dataVisBlog/blob/eb6b53ed750a854b63c563fde42f9b9ebcaddfd0/README.md) | [Short Form Posts](https://github.com/grntl/dataVisBlog/blob/b1541ee35cb8d109bd1438eee7f3d958f1790daa/shortForm.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
 ## October 31
+I recently made some visualizations using public CTA ridership data provided by the CTA. The dataset tallies the rides counted at every station from 2001 to 2022. 
+
+I made two visualizations: one shows the average rides per month from 2001-2019, and the other shows the average rides per weekday from 2001-2019. I removed the years 2020-2022 from the equation since those years were so abnormal for transit ridership that they would only muddy an insight I could get from looking trying to find general ridership patterns.
+
+To start out, I loaded in the following packages:
+
+```
+library(tidyverse)
+# install.packages("fauxnaif", dep = T)
+# install.packages(c('ggthemes', "fauxnaif", "patchwork"))
+library(ggthemes)
+library(fauxnaif)
+library(patchwork)
+library(dplyr) 
+install.packages('lubridate')
+library(lubridate, warn.conflicts = FALSE)
+install.packages('scales')
+library(scales)
+install.packages('viridis')
+library(viridis)
+```
+Then I loaded in the dataset and removed the years 2020-2022
+```
+ctaRidership <- read.csv(file = 'C:\\Users\\grant\\Downloads\\CTA_-_Ridership_-__L__Station_Entries_-_Daily_Totals.csv')
+
+# converting the date column into the proper date format. We remove 2020-2022 because the data is so abnormal from COVID that it only muddies the insight we get from seeing monthly ridership trends over the course of a typical year.
+ctaRidership$date <- as.Date(ctaRidership$date, format = '%m/%d/%Y')
+ctaRidership %>%
+  filter(ctaRidership$date < '2020-01-01') -> ctaRidership
+```
+My first graph looked like this:
+
+My code to produce this graph (with annotations):
+```
+# grouping the data by months. 
+ctaRidership %>%
+  group_by(month = lubridate::floor_date(date, "month")) %>%
+  filter %>%  summarize(amount = sum(as.numeric(rides), na.rm = T)) -> ridershipByMonth
+
+# turning the mongth column into just the month, and then just numeric format so that the data doesn't retain it's yearly values even if it only shows the month in the data set. That way, each year can stack on top of each other such that any particular month means that month for every year in the dataset.
+ridershipByMonth$month <- as.numeric(format(ridershipByMonth$month, format = '%m'))
+
+# Make my error upper and lower bars. 19 is the number of years in the data set.
+ridershipByMonth %>%
+  group_by(month) %>%
+  summarize(meanRiders = mean(amount, na.rm = T),
+            seRiders = sd(amount, na.rm = T)/sqrt(19)) %>%
+  mutate(upper_bound = meanRiders + (seRiders * 1.96),
+         lower_bound = meanRiders - (seRiders * 1.96)) -> ridershipByMonth
+
+# Make my graph
+ridershipByMonth %>%
+  ggplot(aes(x = month, y = meanRiders)) +
+  geom_line() +
+  geom_point() +
+  geom_errorbar(
+    aes(ymin = lower_bound,
+        ymax = upper_bound)) +
+  xlab('Month') + 
+  scale_x_continuous(labels = c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'), lim = c(0,13), breaks = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)) +
+  ylab('Average Rides') +
+  scale_y_continuous(labels=c('12,000,000', '13,000,000', '14,000,000', '15,000,000', '16,000,000', '17,000,000'), lim = c(12000000, 17000000), breaks = c(12000000, 13000000, 14000000, 15000000, 16000000, 17000000)) +
+  ggtitle('Average Rides per Month from 2001-2019') -> ridershipMonthLine
+```
+My second graph looked like this:
+
+The code to produce this graph (with annotations):
+```
+# Find the total number of weeks that have passed. We need to use this for the standard error calculation.
+totalWeeks <- as.numeric(difftime(max(ctaRidership$date), min(ctaRidership$date), units="weeks"))
+
+# Make a new column that just shows the day of the week
+ctaRidership$weekday <- format(ctaRidership$date, format = '%a')
+
+# Make error bars
+ctaRidership %>%
+  # First group by date and sum. Not doing this will result in the mean being calculated from things we don't want, such as the mean rides from different stations on one day, since there are observations from multiple stations for any particular day.
+  group_by(date) %>% 
+  mutate(dailyRiderTotal = sum(rides, na.rm = T)) %>%
+  # Now group by weekday and find the mean rides for a given day of the week
+  group_by(weekday) %>%
+  summarize(meanRides = mean(dailyRiderTotal, na.rm = T),
+            seRides = sd(dailyRiderTotal, na.rm = T)/sqrt(totalWeeks)) %>%
+  mutate(upper_bound2 = meanRides + (seRides * 1.96),
+         lower_bound2 = meanRides - (seRides * 1.96)) -> ridershipByDay
+
+# Make my graph
+ridershipByDay %>%
+  ggplot(aes(x = weekday, y = meanRides, group = 1)) +
+  geom_line() +
+  geom_point() +
+  geom_errorbar(
+    aes(ymin = lower_bound2,
+        ymax = upper_bound2)) +
+  scale_x_discrete(lim = c('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')) +
+  xlab('Days of the Week') +
+  scale_y_continuous(labels = c('200,000', '300,000', '400,000', '500,000', '600,000'), lim = c(200000, 600000), breaks = c(200000, 300000, 400000, 500000, 600000)) +
+  ylab('Average Rides') +
+  ggtitle('Average Rides per Weekday from 2001-2019') -> ridershipWeekday
+```
+### A visualization I found recently that I disliked
+I found this in a tweet from Fortune magazine. 
+
+The part that really doomed this visualization is the legend. First of all, what is a Zillow Home Value Index? I have no clue what any numbers on the color scale mean. Additionally, the x axis of the color scale itself is not even. The left end of the color scale is -10, but the middle is 0, and then the right is 50. I would just put some plain old percentage values on the scale, instead of whatever the Zillow  Home Value Index is.
+
 ## October 10
 ### A visualization I found recently that I disliked
 I found this data visualization on from a [Wall Street Journal article about carbon emissions](http://graphics.wsj.com/climate-talks/). 
