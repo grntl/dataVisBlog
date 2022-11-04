@@ -33,7 +33,7 @@ ctaRidership %>%
   filter(ctaRidership$date < '2020-01-01') -> ctaRidership
 ```
 My first graph looked like this:
-
+![Screenshot_20221104_042309](https://user-images.githubusercontent.com/114178136/199940073-2506c676-3b4b-41bb-af32-1db519ba88aa.png)
 My code to produce this graph (with annotations):
 ```
 # grouping the data by months. 
@@ -67,7 +67,7 @@ ridershipByMonth %>%
   ggtitle('Average Rides per Month from 2001-2019') -> ridershipMonthLine
 ```
 My second graph looked like this:
-
+![Screenshot_20221104_042712](https://user-images.githubusercontent.com/114178136/199940143-b97d1971-6dc5-4f49-a09d-8cf74dd67b95.png)
 The code to produce this graph (with annotations):
 ```
 # Find the total number of weeks that have passed. We need to use this for the standard error calculation.
@@ -104,7 +104,7 @@ ridershipByDay %>%
 ```
 ### A visualization I found recently that I disliked
 I found this in a tweet from Fortune magazine. 
-
+![Ff2PBHCWYAEVEy5](https://user-images.githubusercontent.com/114178136/199940413-a29a95df-661a-4028-9ea5-e720517f8787.png)
 The part that really doomed this visualization is the legend. First of all, what is a Zillow Home Value Index? I have no clue what any numbers on the color scale mean. Additionally, the x axis of the color scale itself is not even. The left end of the color scale is -10, but the middle is 0, and then the right is 50. I would just put some plain old percentage values on the scale, instead of whatever the Zillow  Home Value Index is.
 
 ## October 10
