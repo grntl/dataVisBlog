@@ -2,7 +2,7 @@
 [Home](https://github.com/grntl/dataVisBlog/blob/eb6b53ed750a854b63c563fde42f9b9ebcaddfd0/README.md) | [Short Form Posts](https://github.com/grntl/dataVisBlog/blob/b1541ee35cb8d109bd1438eee7f3d958f1790daa/shortForm.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
 ## October 31
-I recently made some visualizations using public CTA ridership data provided by the CTA. The dataset tallies the rides counted at every station from 2001 to 2022. 
+I recently made some visualizations using [public CTA ridership data](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f) provided by the CTA. The dataset tallies the rides counted at every station from 2001 to 2022. 
 
 I made two visualizations: one shows the average rides per month from 2001-2019, and the other shows the average rides per weekday from 2001-2019. I removed the years 2020-2022 from the equation since those years were so abnormal for transit ridership that they would only muddy an insight I could get from looking trying to find general ridership patterns.
 
@@ -33,7 +33,7 @@ ctaRidership %>%
   filter(ctaRidership$date < '2020-01-01') -> ctaRidership
 ```
 My first graph looked like this:
-![Screenshot_20221104_042309](https://user-images.githubusercontent.com/114178136/199940073-2506c676-3b4b-41bb-af32-1db519ba88aa.png)
+![This is a graph showing average rides per month from 2001-2019](https://user-images.githubusercontent.com/114178136/199940073-2506c676-3b4b-41bb-af32-1db519ba88aa.png)
 My code to produce this graph (with annotations):
 ```
 # grouping the data by months. 
@@ -67,7 +67,7 @@ ridershipByMonth %>%
   ggtitle('Average Rides per Month from 2001-2019') -> ridershipMonthLine
 ```
 My second graph looked like this:
-![Screenshot_20221104_042712](https://user-images.githubusercontent.com/114178136/199940143-b97d1971-6dc5-4f49-a09d-8cf74dd67b95.png)
+![This is a graph showing average rides per weekday from 2001-2019](https://user-images.githubusercontent.com/114178136/199940143-b97d1971-6dc5-4f49-a09d-8cf74dd67b95.png)
 The code to produce this graph (with annotations):
 ```
 # Find the total number of weeks that have passed. We need to use this for the standard error calculation.
@@ -103,9 +103,9 @@ ridershipByDay %>%
   ggtitle('Average Rides per Weekday from 2001-2019') -> ridershipWeekday
 ```
 ### A visualization I found recently that I disliked
-I found this in a tweet from Fortune magazine.
+I found this in a [tweet from Fortune magazine](https://twitter.com/FortuneMagazine/status/1584580304194658309/photo/1).
 
-![Ff2PBHCWYAEVEy5](https://user-images.githubusercontent.com/114178136/199940413-a29a95df-661a-4028-9ea5-e720517f8787.png)
+![This is an image of a map of housing price changes in the US by county coded by color](https://user-images.githubusercontent.com/114178136/199940413-a29a95df-661a-4028-9ea5-e720517f8787.png)
 
 The part that really doomed this visualization is the legend. First of all, what is a Zillow Home Value Index? I have no clue what any numbers on the color scale mean. Additionally, the x axis of the color scale itself is not even. The left end of the color scale is -10, but the middle is 0, and then the right is 50. I would just put some plain old percentage values on the scale, instead of whatever the Zillow  Home Value Index is.
 
