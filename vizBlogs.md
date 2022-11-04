@@ -27,7 +27,8 @@ Then I loaded in the dataset and removed the years 2020-2022
 ```
 ctaRidership <- read.csv(file = 'C:\\Users\\grant\\Downloads\\CTA_-_Ridership_-__L__Station_Entries_-_Daily_Totals.csv')
 
-# converting the date column into the proper date format. We remove 2020-2022 because the data is so abnormal from COVID that it only muddies the insight we get from seeing monthly ridership trends over the course of a typical year.
+# converting the date column into the proper date format. We remove 2020-2022 because the data is so abnormal from COVID that it only muddies the 
+# insight we get from seeing monthly ridership trends over the course of a typical year.
 ctaRidership$date <- as.Date(ctaRidership$date, format = '%m/%d/%Y')
 ctaRidership %>%
   filter(ctaRidership$date < '2020-01-01') -> ctaRidership
@@ -41,7 +42,9 @@ ctaRidership %>%
   group_by(month = lubridate::floor_date(date, "month")) %>%
   filter %>%  summarize(amount = sum(as.numeric(rides), na.rm = T)) -> ridershipByMonth
 
-# turning the mongth column into just the month, and then just numeric format so that the data doesn't retain it's yearly values even if it only shows the month in the data set. That way, each year can stack on top of each other such that any particular month means that month for every year in the dataset.
+# turning the mongth column into just the month, and then just numeric format so that the data doesn't retain it's yearly values even if it only 
+#shows the month in the data set. That way, each year can stack on top of each other such that any particular month means that month for every year 
+# in the dataset.
 ridershipByMonth$month <- as.numeric(format(ridershipByMonth$month, format = '%m'))
 
 # Make my error upper and lower bars. 19 is the number of years in the data set.
@@ -78,7 +81,8 @@ ctaRidership$weekday <- format(ctaRidership$date, format = '%a')
 
 # Make error bars
 ctaRidership %>%
-  # First group by date and sum. Not doing this will result in the mean being calculated from things we don't want, such as the mean rides from different stations on one day, since there are observations from multiple stations for any particular day.
+  # First group by date and sum. Not doing this will result in the mean being calculated from things we don't want,
+  # such as the mean rides from different stations on one day, since there are observations from multiple stations for any particular day.
   group_by(date) %>% 
   mutate(dailyRiderTotal = sum(rides, na.rm = T)) %>%
   # Now group by weekday and find the mean rides for a given day of the week
