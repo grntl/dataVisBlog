@@ -1,6 +1,7 @@
 # Visualization Blogs
 [Home](https://github.com/grntl/dataVisBlog/blob/eb6b53ed750a854b63c563fde42f9b9ebcaddfd0/README.md) | [Short Form Posts](https://github.com/grntl/dataVisBlog/blob/b1541ee35cb8d109bd1438eee7f3d958f1790daa/shortForm.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
+## October 31
 ## October 10
 ### A visualization I found recently that I disliked
 I found this data visualization on from a [Wall Street Journal article about carbon emissions](http://graphics.wsj.com/climate-talks/). 
@@ -79,4 +80,3 @@ avgCostCountry %>%
 ``` 
 Unfortunately, I cannot understand for the life of me how to shift the axis so that the country labels are actually aligned with their bars. But if you inspect closely, you can see how the column for US is just far beyond any other country. 
 ![avgCostCountry](https://user-images.githubusercontent.com/114178136/195026606-4e4dff42-1cf3-404e-af6f-be0e6870e9e1.png)
-## Oct 31
