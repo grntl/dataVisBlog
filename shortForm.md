@@ -7,7 +7,10 @@ We are interested broadly in how civil society and government censorship efforts
 
 Civil society and government censorship efforts are very important to political society. Civil society is defined the space between the state and private life where people form communities and groups to pursue their interests, like unions, religious groups, interest groups, and so on. Government censorship efforts is the degree to which the government tries to censor print or broadcast media. These variables differ in that a society can still have civil society where people meet and advocate their interests to those in power through direct contact, and yet government censorship will not affect civil society unless groups try to broadcast put their interests into some form of media. Nevertheless, the latter scenario does often happen, so we would like to use visual analysis of the data to observe their relationship.
 
-
+![Screenshot_20221116_090718](https://user-images.githubusercontent.com/114178136/202345988-d7affaf8-96af-42ab-b265-5890a19a00a7.png)
+![Screenshot_20221116_090653](https://user-images.githubusercontent.com/114178136/202345998-838daa14-a603-48d9-a345-a2a258674139.png)
+![Screenshot_20221116_090554](https://user-images.githubusercontent.com/114178136/202346006-7699e457-10ea-4b7c-b7d2-8a7c2333fbfd.png)
+![Screenshot_20221116_090522](https://user-images.githubusercontent.com/114178136/202346025-2a0330af-6d7f-463d-bb83-2a97e322b17e.png)
 
 ## Visualizing CTA Ridership (short form blog \#1)
 
