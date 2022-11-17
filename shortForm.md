@@ -2,10 +2,12 @@
 [Home](https://github.com/grntl/dataVisBlog/blob/a6217a8dae80b358d75b71554485020a7e35e4e7/README.md) | [Visualization Blogs](https://github.com/grntl/dataVisBlog/blob/05aa0aa680d6fafe407189b80aa74af30f474d7d/vizBlogs.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
 ## Visualizing Civil Society and Freedom of Expression (short form blog \#2)
-![Screenshot_20221116_084902](https://user-images.githubusercontent.com/114178136/202343555-1ad4da12-824b-47c4-9ce6-64d78aea9aac.png)
-![Screenshot_20221116_084929](https://user-images.githubusercontent.com/114178136/202343564-718533af-6a14-482f-a57d-a06da52e443b.png)
-![Screenshot_20221116_084952](https://user-images.githubusercontent.com/114178136/202343578-1b59a1f6-e6fa-4274-a04d-29d7e549ca13.png)
-![Screenshot_20221116_085016](https://user-images.githubusercontent.com/114178136/202343585-1392af64-f3b2-44d3-8a00-78c2be16d349.png)
+
+We are interested broadly in how civil society and government censorship efforts are related, interact, and change over time and region. The data we use to explore these two factors is from the [VDEM](https://www.v-dem.net/) measuring various aspects of democracy. 
+
+Civil society and government censorship efforts are very important to political society. Civil society is defined the space between the state and private life where people form communities and groups to pursue their interests, like unions, religious groups, interest groups, and so on. Government censorship efforts is the degree to which the government tries to censor print or broadcast media. These variables differ in that a society can still have civil society where people meet and advocate their interests to those in power through direct contact, and yet government censorship will not affect civil society unless groups try to broadcast put their interests into some form of media. Nevertheless, the latter scenario does often happen, so we would like to use visual analysis of the data to observe their relationship.
+
+
 
 ## Visualizing CTA Ridership (short form blog \#1)
 
