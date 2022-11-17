@@ -21,7 +21,7 @@ We can gain several interesting insights from this visualization. The most impor
 
 The last visualization is a dotplot showing the difference in distribution of countries between the 1950 and 2020. 1950 was chosen as that is around when the post-war era started, and is bookended by 2020, a year close to the present-day. These two dates help us see whether things improved aside from the most immediate effects and fluctuations of World War II.
 ![Screenshot_20221116_090522](https://user-images.githubusercontent.com/114178136/202346025-2a0330af-6d7f-463d-bb83-2a97e322b17e.png)
-This graph mostly corroborates what the previous graphs have shown, such as the improvement on both measures, and how government censorship efforts fluctuates less. Note that some aspects of this graph are problematic, such as the binwidth, which is set at 1/30 and does not correspond to individual countries. Other binwidths were tested but only decreased visual clarity.
+This graph mostly corroborates what the previous graphs have shown, such as the improvement on both measures, and how government censorship effort fluctuates less. Note that some aspects of this graph are problematic, such as the binwidth, which is set at 1/30 and does not correspond to individual countries. Other binwidths were tested but only decreased visual clarity.
 
 To conclude, we can observe that the two variables are correlated with each other, and that certain regions like Europe fare better than others, but that in many places, the two are starting to decouple.
 
