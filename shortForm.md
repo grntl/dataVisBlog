@@ -25,6 +25,9 @@ This graph mostly corroborates what the previous graphs have shown, such as the 
 
 To conclude, we can observe that the two variables are correlated with each other, and that certain regions like Europe fare better than others, but that in many places, the two are starting to decouple.
 
+Citations for packages used:
+()
+
 ## Visualizing CTA Ridership (short form blog \#1)
 
 Public transit is a cornerstone of urban communities. It allows residents of a city to commute to work without having to be in a car on the street. This is important for many reasons. First, the environmental benefits of having less car trips is huge. Not only is it better for the climate, but it makes for a better city in terms of noise, pollution, and safety. Second, public transit allows many people to save money on transit because they do not have to buy a car. 
