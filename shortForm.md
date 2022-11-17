@@ -3,7 +3,7 @@
 ***
 ## Visualizing Civil Society and Freedom of Expression (short form blog \#2)
 
-We are interested broadly in how civil society and government censorship efforts are related, interact, and change over time and region. The data we use to explore these two factors is from the [VDEM](https://www.v-dem.net/) measuring various aspects of democracy. 
+We are interested broadly in how civil society and government censorship efforts are related, interact, and change over time and region. The data we use to explore these two factors is from the [VDEM database](https://www.v-dem.net/) measuring various aspects of democracy. 
 
 Civil society and government censorship efforts are very important to political society. Civil society is defined the space between the state and private life where people form communities and groups to pursue their interests, like unions, religious groups, interest groups, and so on. Government censorship efforts is the degree to which the government tries to censor print or broadcast media. These variables differ in that a society can still have civil society where people meet and advocate their interests to those in power through direct contact, and yet government censorship will not affect civil society unless groups try to broadcast put their interests into some form of media. Nevertheless, the latter scenario does often happen, so we would like to use visual analysis of the data to observe their relationship. In this dataset, civil society is measured on a 0-1 scale, and government censorship efforts are measured on a -4 to 4 scale where 0 is most severe and 4 is the least.
 
