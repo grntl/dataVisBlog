@@ -26,7 +26,7 @@ This graph mostly corroborates what the previous graphs have shown, such as the 
 To conclude, we can observe that the two variables are correlated with each other, and that certain regions like Europe fare better than others, but that in many places, the two are starting to decouple.
 
 Citations for packages used:
-(shortform2Cites.pdf)
+[](shortform2Cites.pdf)
 
 ## Visualizing CTA Ridership (short form blog \#1)
 
