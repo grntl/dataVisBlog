@@ -1,6 +1,27 @@
 # Visualization Blogs
 [Home](https://github.com/grntl/dataVisBlog/blob/eb6b53ed750a854b63c563fde42f9b9ebcaddfd0/README.md) | [Short Form Posts](https://github.com/grntl/dataVisBlog/blob/b1541ee35cb8d109bd1438eee7f3d958f1790daa/shortForm.md) | [Final Assignment](https://github.com/grntl/dataVisBlog/blob/9fd117a4d77a7aaa432f277695ff197ed8c54b8a/finalAssign.md)
 ***
+
+## November 21
+
+The question I would like to ask is how does housing affordability reflect the socioeconomic factors. This question is very vague, and the one I'd ideally like to ask is how housing affordability is connected to zoning. However, I've had trouble finding zoning data and housing price data in the same place. This [paper](https://www.sciencedirect.com/science/article/pii/S0094119018300056#sec0005) has some good datasets and gets very close to the question I'm asking. I've managed to find [zoning data as a shape file](https://secondcityzoning.org/#/?id=3711) for the city of Chicago, but I have not been able to find a corresponding housing price dataset that works. The one they use is not a publicly available source, they only obtained it through "a license agreement with the vendor" (3.5), since basically no datasets measure housing prices grouped by housing zones. This [website](https://www.housingstudies.org/data-portal/info/transactions/) looked like it had potential, but every link on there is broken. Ideally, I would like individual housing transactions datat that gives the location of where something is.
+
+Regardless, I found a paper using the dataset that I did end up settling on. The paper is "[The Impact of Zoning on Housing Affordability](https://www.nber.org/system/files/working_papers/w8835/w8835.pdf)." This paper seems to strike pretty close to the question I ideally would like to ask, but unfortunately it ends up making conclusions based on construction costs and sales price, and what it means when sales prices are close to the construction costs. Additionally, the other complementary dataset they use is also not open access. The dataset I do use is from the [American Housing Survey: Housing Affordability Data System](https://www.huduser.gov/portal/datasets/hads/hads.html). The [data is particularly rich](https://www.huduser.gov/portal/datasets/hads/HADS_doc.pdf) in socioeconomic data related to all sorts of measures of income. One of the limitations of the data is that data collection only seemed to start being done yearly after 2000 and goes until 2013. Before that, the data was collected every 5 and then every 10 years. This can be seen in this data visualization:
+
+For example, one of the questions that I wanted to answer with this specific set of quick visualizations is whether housing age correlates with housing price (specifically, cost at 6% interest), and then what kinds of people income-wise tend to live in certain age housing. In the visualization above, a quick glance seems to inform us that housing prices tend to get cheaper with newer housing. What might this mean? It means that older homes that might be well-maintained might get a premium for historical value. However, when the data is filtered for only the year 2000 and beyond, and without what I suspect are luxury home prices, the trend line has an upward slope. This might mean that newer homes are more expensive because they are quite simply newer and have more modern amenities. 
+
+This isn't very political, but I next wanted to find out what kinds of income levels reside in these homes. For example, if it turns out that low-income homeowners live in the oldest homes, whose prices might reflect their cheapness, it could mean that lower-income homeseekers are left to and resorting to poorer quality and older housing. On the other hand, if it turns out that those on the lower end of the income spectrum live in the newest homes, it might mean that those who are wealthier but live in supposedly cheaper and older homes might actually be residing in a family home that was passed down for generations. 
+
+Sadly, the actual answer is neither, because income does not appear at all to be associated with the year in which the housing was built. Both the full barplot and the filtered barplot show a generally even "Median Income Adjusted for # of Persons" (the variable for which I measured homeowner income). The dip at the end I suspect is due to incomplete data in 2013, because without it, everything is steady. Additionally, the scatterplot reflects the same.
+
+These are the questions I hope to ask and investigate in my final project (at least tentatively). Some data visualizations I found that I potentially would like to replicate and include are:
+
+from here: [https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization](https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization)
+
+This is cool, but I don't think I can make it:
+
+from here: [https://www.visualcapitalist.com/least-affordable-housing-interactive/](https://www.visualcapitalist.com/least-affordable-housing-interactive/)
+
 ## October 31
 I recently made some visualizations using [public CTA ridership data](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f) provided by the CTA. The dataset tallies the rides counted at every station from 2001 to 2022. 
 
