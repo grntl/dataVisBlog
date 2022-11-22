@@ -25,6 +25,7 @@ Sadly, the actual answer is neither, because income does not appear at all to be
 These are the questions I hope to ask and investigate in my final project (at least tentatively). Some data visualizations I found that I potentially would like to replicate and include are:
 
 ![Screenshot_20221122_035919](https://user-images.githubusercontent.com/114178136/203290087-275d185c-be32-4d97-988a-b234fabcf6c7.png)
+
 from here: [https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization](https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization)
 
 This is cool, but I don't think I can make it:
