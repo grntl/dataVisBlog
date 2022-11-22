@@ -28,9 +28,9 @@ These are the questions I hope to ask and investigate in my final project (at le
 from here: [https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization](https://www.qubix.com/blog/housing-price-prediction-in-oracle-data-visualization)
 
 This is cool, but I don't think I can make it:
-
-from here: [https://www.visualcapitalist.com/least-affordable-housing-interactive/](https://www.visualcapitalist.com/least-affordable-housing-interactive/)
 ![Screenshot_20221122_042154](https://user-images.githubusercontent.com/114178136/203290128-e9a67a90-a8fa-4bc5-bc09-af9a6ba3981d.png)
+from here: [https://www.visualcapitalist.com/least-affordable-housing-interactive/](https://www.visualcapitalist.com/least-affordable-housing-interactive/)
+
 ## October 31
 I recently made some visualizations using [public CTA ridership data](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f) provided by the CTA. The dataset tallies the rides counted at every station from 2001 to 2022. 
 
