@@ -68,7 +68,7 @@ ctaRidership %>%
 ```
 My first graph looked like this:
 ![This is a graph showing average rides per month from 2001-2019](https://user-images.githubusercontent.com/114178136/199940073-2506c676-3b4b-41bb-af32-1db519ba88aa.png)
-From this graph, we can tell that ridership peaks in October and is the lowest during the winter.
+In all my graphs in this data analysis, I changed the limits on the y-axis so as to emphasize the changes in ridership, as opposed to keeping it compressed and hard to read. From this graph, we can tell that ridership peaks in October and is the lowest during the winter.
 My code to produce this graph (with annotations):
 ```
 # grouping the data by months. 
