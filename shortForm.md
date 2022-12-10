@@ -20,7 +20,7 @@ Below is another graph using politically condensed regions.
 These politically condensed regions were obtained using the e_regionpol variable. Rather than being grouped geographically, countries are grouped together based on historically significant political groupings. The following image is from the codebook and provides the explanation behind how the variable is measured.
 ![screenshot of vdem codebook for e_regionpol variable](https://user-images.githubusercontent.com/114178136/206840605-bcce0a09-a088-4d0a-8cf7-3f53e036889b.png)
 
-For more clarity, we break the data down into individual regions. 
+We use the same e_regionpol variable in the next visualization:
 ![linegraph, civil society and gov. censorship effort since 1930](https://user-images.githubusercontent.com/114178136/206840421-02f2cb04-19f8-43d5-92d5-e85cf7e52225.png)
 We can gain several interesting insights from this visualization. The most important is that gov. censorship efforts tends to fluctuate less than civil society. The second is that in many regions, we can observe a decoupling of civil society from gov. censorship efforts where they had previously tracked each other tightly. One potential theory for this is that the Internet and its various forms of communication have made it harder for the government to control civil society through just media censorship. This would require data analysis outside of the scope of this analysis to confirm.
 
