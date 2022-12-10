@@ -38,13 +38,13 @@ Recently, ridership came under scrutiny, not only because the adoption of public
 To investigate this issue, I used the official [CTA dataset “CTA – Ridership – ‘L’ Station Entries – Daily Totals"](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f). The dataset consists of five columns: the station ID, the station name, date, the type of day (weekday, Saturday, Sunday/holiday), and also the number of rides. This data is fairly reputable because it is collected by the official agency itself. The data goes from the beginning of 2001 up through July, 2022. 
 I want to use this data to visualize and understand how ridership has historically been on the CTA, and how it has looked in recent years. To begin, I made a bar plot of the ridership total for each year. 
 
-![This is a bar plot graph showing ridership by year](https://user-images.githubusercontent.com/114178136/197940422-06c31da6-3350-478c-a079-215a0ace58a4.png)
+![This is a bar plot graph showing ridership by year](https://user-images.githubusercontent.com/114178136/206838054-0946ccbc-2242-437d-bbcf-725075bf21a4.png)
 
 This aggregates data from every single station for every single day of that year and adds them together. After making this graph, it is very clear just how much COVID-19 affected ridership. However, it has also been increasing since 2020, as the data for 2022 only goes through July, yet the ridership is about three-quarters of the way to 2021’s ridership total. 
 
 We can look at this in more detail by looking at monthly ridership over the same time period. 
 
-![This is a line graph showing ridership by month, from 2001 to 2022](https://user-images.githubusercontent.com/114178136/197941144-c198938f-0d8a-4186-9e1a-3aa6da187cd4.png)
+![This is a line graph showing ridership by month, from 2001 to 2022](https://user-images.githubusercontent.com/114178136/206838068-605a226f-0a0e-4468-92b5-223feee667ef.png)
 
 Here, you can see how ridership fluctuates each year, such as how ridership tends to decrease in the winter. Because the first graph is cumulative, it does not show just how fast the monthly ridership totals have begun to rebound, since a cumulative tally at the end of a year takes time to reflect what has happened over the course of the year. You can also see the precipitous fall after COVID-19 began. More importantly, this graph allows us to see just how fast the recovery is happening. The seasonal dip from the winter of 2021 into 2022 finished much higher than recent lows, giving a decent ridership base to climb from through the rest of 2022. 
 
@@ -52,11 +52,11 @@ One thing to note from both the first and second graph is that they show a rider
 
 Next, I’m curious about how fast the ridership total tends to increase over the course of the year. That means that for each year, I want a line which at any given month of the x axis shows the running total of ridership up to that point since the start of the year:
 
-![This is a line graph with a line for each year showing the cumulative total ridership over the course of a year](https://user-images.githubusercontent.com/114178136/197940555-cb73c1bf-10ab-4e57-8395-1b6fa40c10af.png)
+![This is a line graph with a line for each year showing the cumulative total ridership over the course of a year](https://user-images.githubusercontent.com/114178136/206838079-263bb839-24ab-4825-9069-bce9956d0b10.png)
 
 I was unable to add a legend due to the way I had to program it (likely suboptimal), but to explain the coloring, all the black lines are from 2001-2019. The yellow line is 2020. It was going on the same general trajectory as all the previous years, but plateaus right when COVID-19 hit. 2021 is in blue. The trajectory of the 2021 total ridership over the year steadily increases, but its rate of increase is much lower than those of previous years (excluding 2020, of course). Finally, the red line is 2022. Although the red line started the year out with similarly low ridership as the winter of 2021, it is climbing a little faster than in 2021, meaning that more people are coming back to use public transit again. Perhaps something we might see in the near future is the line for each particular year steadily climbing up to where the black lines from pre-COVID ridership years are clustered.
 
-![This is a line graph with a line for each year showing the ridership per month over the course of a year](https://user-images.githubusercontent.com/114178136/197940574-ece0f198-18a6-461e-bcb8-df7f9427e7c4.png)
+![This is a line graph with a line for each year showing the ridership per month over the course of a year](https://user-images.githubusercontent.com/114178136/206838111-42ccf8d4-0461-43f4-953d-f15654472ccc.png)
 
 This graph also shows ridership over the course of each year, but rather than showing cumulative counts, it shows the riders each month. The outlook from this graph might make a hope for a speedy public transit ridership recovery doubtful. The red line showing ridership each month for 2022 seems to be flattening out compared to the same line in 2021. When viewed against the pre-COVID lines, this is somewhat typical when only observing the trajectory of the graph, while ignoring the magnitude, as the pre-Covid years seemed to have pretty flat lines as well. However, there is clearly no guaranteed inexorable climb in the recovery, and officials will have to work to encourage the public to utilize public transit again, rather than relying on some sort of natural recovery.
 
