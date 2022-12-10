@@ -162,15 +162,12 @@ I found this from a [New York Times article about abortion costs](https://archiv
 A bit of code that might produce the same thing with two graphs would be:
 EDIT: I now know that this could be done quite nicely with a facet wrap.
 ```
-clinic1Graph %>%
-  ggplot(aes(x = year) + 
-  geom_line(aes(y = abortionClinic1)) +
-  ylim(0, 1000)
-  
-clinic2Graph %>%
-  ggplot(aes(x = year) +
-  geom_line(aes(y = abortionClinic2)) + 
-  ylim(0, 1000)
+dataset %>%
+  filter(year>2020) %>%
+  ggplot(aes(x = year, y = abortionCost)) +
+    geom_line() +
+    facet_wrap(vars(as.factor(abortionClinicLocation)), ncol = 5) +
+    labs(title = 'Change in average spending per patient')
 ```
 This way, there are two graphs. I got the idea for this code from [stackOverflow](https://stackoverflow.com/questions/30375600/how-to-plot-multiple-lines-for-each-column-of-a-data-matrix-against-one-column), because I realized that the table for this data would have to be structured kind of oddly. The left hand column would be a sort of index by year, and the columns would be each abortion clinic, with the values being the prices. I'd obviously have to be selective about the years by picking specifically the 2021-2022 row, but I'm not sure how to do that yet.
 ### My own data visualization
