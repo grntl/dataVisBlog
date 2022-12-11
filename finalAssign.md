@@ -24,6 +24,7 @@ One likely explanation is that multi-family housing tends to be built in cities,
 
 ![Figure 2 100% Stacked barplot by structure type](https://user-images.githubusercontent.com/114178136/206899214-eca742c4-13c3-4071-89f8-cdabbc08cf8c.png)
 *Figure 2 100% Stacked barplot by structure type*
+
 ![Figure 3 Barplot of average market value by structure type and location](https://user-images.githubusercontent.com/114178136/206899227-d5c48a25-b41f-4662-b66d-834d12054e57.png)
 *Figure 3 Barplot of average market value by structure type and location*
 
@@ -41,6 +42,7 @@ For the purposes of Figure 5, we take the average fair market rent as an aggrega
 
 ![Figure 5 Barplot of average fair market rent by structure type](https://user-images.githubusercontent.com/114178136/206899241-5de59001-6dfd-4835-8099-68008709191d.png)
 *Figure 5 Barplot of average fair market rent by structure type*
+
 ![fig6](https://user-images.githubusercontent.com/114178136/206899245-544b2510-3302-4810-96c0-2023e31064a5.png)
 *Figure 6 Barplot of average fair market rent by structure type and location*
 
@@ -68,8 +70,10 @@ How do these prices reflect on homeowners? Figure 9 has boxplots for each struct
 
 ![Figure 9 Boxplots of cost burdens by structure type](https://user-images.githubusercontent.com/114178136/206899271-09ef30c0-2432-41d3-bff4-dade790c59dc.png)
 *Figure 9 Boxplots of cost burdens by structure type*
+
 ![fig10](https://user-images.githubusercontent.com/114178136/206899276-2a6cbdd6-a820-4bb2-8923-907a3d9b5297.png)
 *Figure 10 Boxplots of cost burdens by structure type (w/o filtering out burdens > 1)*
+
 ![fig11](https://user-images.githubusercontent.com/114178136/206899280-8168d1cf-4231-4506-902f-ab8deb977c6f.png)
 *Figure 11 Boxplots of cost burden by structure type and owner/renter status*
 
@@ -95,6 +99,7 @@ Accordingly, the values which were assigned category 5 were filtered out. Figure
 
 ![Figure 14 Barplot of no or negative income by structure type and owner/renter status](https://user-images.githubusercontent.com/114178136/206899303-e3842438-0815-4bfa-bdf7-60ca87a16013.png)
 *Figure 14 Barplot of no or negative income by structure type and owner/renter status*
+
 ![Figure 15 Barplot of no or negative income (BURDEN) by structure type and owner/renter status](https://user-images.githubusercontent.com/114178136/206899307-b1488034-90bc-42c0-93ee-06add546b1d1.png)
 *Figure 15 Barplot of no or negative income (BURDEN) by structure type and owner/renter status*
 
